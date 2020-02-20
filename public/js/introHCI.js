@@ -1,5 +1,5 @@
 'use strict';
-
+var projects = require('../projects.json');
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -10,6 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	console.log(projects["viewAlt"]);
 }
 
 $(".likeBtn").click(function() {
