@@ -11,5 +11,6 @@ exports.view = function(request, response){
 
 exports.viewAlt = function(request, response) {
 	projects["viewAlt"] = true;
+	console.log(projects["viewAlt"]);
 	response.render('index', projects);
 };
